@@ -1,0 +1,83 @@
+.class public final Lcom/google/android/gms/internal/ads/zzbpg;
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-ads@@20.1.0"
+
+# interfaces
+.implements Lcom/google/android/gms/internal/ads/zzeyl;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/google/android/gms/internal/ads/zzeyl<",
+        "Lcom/google/android/gms/internal/ads/zzcav<",
+        "Lcom/google/android/gms/internal/ads/zzbyi;",
+        ">;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field private final zza:Lcom/google/android/gms/internal/ads/zzbot;
+
+.field private final zzb:Lcom/google/android/gms/internal/ads/zzeyw;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/android/gms/internal/ads/zzeyw<",
+            "Lcom/google/android/gms/internal/ads/zzbwr;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/android/gms/internal/ads/zzbot;Lcom/google/android/gms/internal/ads/zzeyw;)V
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/android/gms/internal/ads/zzbot;",
+            "Lcom/google/android/gms/internal/ads/zzeyw<",
+            "Lcom/google/android/gms/internal/ads/zzbwr;",
+            ">;)V"
+        }
+    .end annotation
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzbpg;->zza:Lcom/google/android/gms/internal/ads/zzbot;
+
+    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzbpg;->zzb:Lcom/google/android/gms/internal/ads/zzeyw;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final bridge synthetic zzb()Ljava/lang/Object;
+    .registers 4
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzbpg;->zzb:Lcom/google/android/gms/internal/ads/zzeyw;
+
+    check-cast v0, Lcom/google/android/gms/internal/ads/zzbqg;
+
+    .line 1
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/zzbqg;->zza()Lcom/google/android/gms/internal/ads/zzbwr;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/google/android/gms/internal/ads/zzcav;
+
+    new-instance v2, Lcom/google/android/gms/internal/ads/zzbos;
+
+    .line 2
+    invoke-direct {v2, v0}, Lcom/google/android/gms/internal/ads/zzbos;-><init>(Lcom/google/android/gms/internal/ads/zzbwr;)V
+
+    sget-object v0, Lcom/google/android/gms/internal/ads/zzbbw;->zzf:Lcom/google/android/gms/internal/ads/zzefx;
+
+    invoke-direct {v1, v2, v0}, Lcom/google/android/gms/internal/ads/zzcav;-><init>(Ljava/lang/Object;Ljava/util/concurrent/Executor;)V
+
+    return-object v1
+.end method
